@@ -4,13 +4,37 @@
     <meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Exemple 2 : les éléments de formulaires</title>
+	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
-	<p><label for="champ_texte">Champ "classique" : </label><input type="text" name="champ_texte" /></p>
-	<p><label for="champ_date">Champ "date" : </label><input type="date" name="champ_date" /></p>
-	<p><label for="champ_heure">Champ "heure" : </label><input type="time" name="champ_heure" /></p>
-	<p><label for="champ_range">Champ "range" : </label><input type="range" name="champ_range" /></p>
-	<p><label for="champ_tel">Champ "téléphone" : </label><input type="tel" name="champ_tel" /></p>
-	<p><a href="./">Retour à la liste des exemples</a></p>
+	<div class="container">
+		<h1>Champs de formulaire</h1>
+		<hr />
+		<div class="row">
+			<fieldset class="col-xs-6">
+				<legend>Champs de formulaire classiques</legend>
+				<p><label for="champ_texte">Champ "text"</label>&nbsp;<input type="text" name="champ_texte" /></p>
+				<p><label for="champ_date">Champ "date"</label>&nbsp;<input type="date" name="champ_date" /></p>
+				<p><label for="champ_heure">Champ "time"</label>&nbsp;<input type="time" name="champ_heure" /></p>
+				<p><label for="champ_range">Champ "range"</label>&nbsp;<input type="range" name="champ_range" /></p>
+				<p><label for="champ_tel">Champ "tel"</label>&nbsp;<input type="tel" name="champ_tel" /></p>
+				<p><label for="champ_email">Champ "mail"</label>&nbsp;<input type="email" name="champ_email" /></p>
+				<p><label for="champ_recherche">Champ "search"</label>&nbsp;<input type="search" name="champ_recherche" /></p>
+				<p><label for="champ_nombre">Champ "number"</label>&nbsp;<input type="number" name="champ_recherche" /></p>
+				<p><label for="champ_couleur">Champ "couleur"</label>&nbsp;<input type="color" name="champ_couleur" /></p>	
+			</fieldset>
+			<fieldset class="col-xs-6">
+				<legend>Champs + complexes</legend>
+				<p><label for="champ_textarea">Textarea (zone de texte)</label><br /><textarea cols="20" rows="2">Coucou !</textarea></p>
+				<p><label for="champ_select">"Select" (menu déroulant)</label>&nbsp;<select name="champ_select"></select></p>
+				<p><label for="champ_select">"Select" avec des valeurs</label>&nbsp;<select name="champ_select"><option value="coucou1">Coucou 1</option></select></p>
+				<p><label for="champ_select">"Select" avec des valeurs groupées</label>&nbsp;<select name="champ_select"><optgroup label="Un petit groupe"><option value="coucou1">Coucou 1</option></optgroup></select></p>
+				<p><label for="champ_bouton">Champ "button"</label>&nbsp;<input name="champ_bouton" type="button" value="Bonjour je suis le bouton classique !" /></p>
+				<p><label for="champ_submit">Champ "submit"</label>&nbsp;<input name="champ_submit" type="submit" value="Bonjour je suis le bouton d'envoi !" /><br /><small>(et je ressemble beaucoup à mon frère juste au-dessus)</small></p>
+				<p><label for="champ_image">Champ "image"</label><br /><input name="champ_image" type="image" src="https://mdn.mozillademos.org/files/3563/HTML5_Logo_128.png" /></p>
+			</fieldset>
+		</div>
+	</div>
+	<p class="container"><a href="./">Retour à la liste des exemples</a></p>
 </body>
 </html>
