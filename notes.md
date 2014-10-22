@@ -26,6 +26,7 @@
       * marquee
       * center
   * HTML 5
+* Le HTML c'est pas mieux avant
 * Comment écrire du HTML 
     * A la main
       * Via un éditeur (Dreamweaver, Notepad++, etc)
