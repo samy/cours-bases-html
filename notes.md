@@ -25,10 +25,10 @@
       * font
       * marquee
       * center
-  * HTML 5
-	* Comment écrire du HTML 
-		* A la main
-		* Via un éditeur (Dreamweaver, Notepad++, etc)
-		* Via un CMS
+* HTML 5
+  * Comment écrire du HTML 
+    * A la main
+      * Via un éditeur (Dreamweaver, Notepad++, etc)
+      * Via un CMS
 
 
