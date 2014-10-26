@@ -50,7 +50,7 @@ Autre exemple sympathique : http://k-legrand.fr
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
     <link rel="stylesheet" href="css/reveal.min.css">
-	<link rel="stylesheet" href="css/theme/default.css" id="theme">
+	<link rel="stylesheet" href="css/theme/cours.css" id="theme">
 	<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
@@ -65,11 +65,96 @@ Autre exemple sympathique : http://k-legrand.fr
 					<small>Samy Rabih - Etudiants IDRAC 2014</small>
 				</p></section>
 		<section>
-			<section>Vertical Slide 1</section>
-			<section>Vertical Slide 2</section>
+			<h1>Qui suis-je ?</h1>
+			<p>
+				<ul>
+					<li>Développeur Web (PHP) chez O2Sources<br /><br /></li>
+					<li>Cuisine du Web / Museomix</li>
+				</ul>
+			</p>
 		</section>
+        <section>
+			<h1>Origine du HTML</h1>
+			<ul>
+				<li>Nécessité d'organiser des documents entre eux</li>
+				<li>Vient de SGML, du CERN, comme HTTP et les URLs</li>
+                <li>Plusieurs versions jusqu'à maintenant :<br /><strong>HTML 2, 3.2, 4.0, XHTML, 5</strong></li>
+			</ul>
+		</section>
+        <section>
+		
+			<h1>Principe de base</h1>
+            <p>
+            	Du code informatique...
+            	<pre>
+                    <code class="html">
+        &lt;ul&gt;
+          &lt;li style="color:Red"&gt;Coucou je suis un élément d'une liste&lt;/li&gt;
+          &lt;li&gt;Moi aussi !&lt;/li&gt;
+        &lt;/ul&gt;
+                    </code>
+				</pre>
+                ...affiché (interptété) par les navigateurs Web<br /><br />
+                <pre><ul style="padding-left:20px">
+                	<li style="color:Red">Coucou je suis un élément d'une liste</li><li>Moi aussi</li>
+				</ul></pre>
+			</p>
+		</section>
+        <section>
+        	<section>
+				<h1>La sémantique</h1>
+				<h3>Qu'est ce que c'est ?</h3>
+            </section>
+            <section>
+	           <p>Chaque balise HTML a un sens</p>
+				<ul>
+                	<li>&lt;p&gt; : un paragraphe</li>
+                    <li>&lt;table&gt; : un tableau</li>
+                    <li>&lt;ul&gt;, &lt;li&gt; : des listes</li>
+                    <li>etc</li>
+				</ul>
+                </section>
+        </section>
+        <section>
+        	<section>
+				<h1>La sémantique</h1>
+				<h3>A quoi ca sert ?</h3>
+			</section>
+            <section>
+				<p>Hiérarchiser les informations</p>
+                <p>Rendre le contenu + facilement analysable par les moteurs de recherche
+                (et d'autres outils)</p>
+                <p>Pour les méta-données</p>			
+			</section>
+        </section>
+        <section>
+            <h1>Une page web-type</h3>
+        </section>
+        <section>
+            <h3>C'est (presque) comme le corps humain, avec ...</h3>
+        </section>
+        <section>
+            <section>
+				<h1>Le &lt;head&gt;</h1>
+			
+            	<p>Ca ressemble à ça : </p>
+				<pre>
+                    <code class="html">&lt;!doctype html&gt;
+&lt;html lang="fr"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;!-- Coucou je suis un commentaire --&gt;
+  &lt;title&gt;Titre de la page&lt;/title&gt;
+  &lt;link rel="stylesheet" href="style.css"&gt;
+  &lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;</code>
+				</pre>		
+			</section>
+        </section>
 	</div>
 </div>
+<script src="lib/js/head.min.js"></script>
 <script src="js/reveal.min.js"></script>
 <script>
 
@@ -89,14 +174,10 @@ Autre exemple sympathique : http://k-legrand.fr
 			// parallaxBackgroundSize: '2100px 900px',
 
 			// Optional libraries used to extend on reveal.js
-		//	dependencies: [
-		//			{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-			//		{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-			//		{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-			//		{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-			//		{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-			//		{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-			//	]
+		dependencies: [
+					
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
 		});
 
 	</script>
