@@ -134,8 +134,7 @@ Autre exemple sympathique : http://k-legrand.fr
             <h3>C'est (presque) comme le corps humain, avec ...</h3>
         </section>
         <section>
-            <section>
-				<h1>Le &lt;head&gt;</h1>
+            <h1>Le &lt;head&gt;</h1>
 			
             	<p>Ca ressemble à ça : </p>
 				<pre>
@@ -147,10 +146,140 @@ Autre exemple sympathique : http://k-legrand.fr
   &lt;title&gt;Titre de la page&lt;/title&gt;
   &lt;link rel="stylesheet" href="style.css"&gt;
   &lt;script src="script.js"&gt;&lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;</code>
-				</pre>		
+&lt;/head&gt;</code>
+				</pre>
+        </section>
+        <section>
+            <h1>Le &lt;body&gt;</h1>
+            	<p>Ca ressemble à ça : </p>
+				<pre>
+                    <code class="html">&lt;body&gt;
+    <header>Coucou je suis haut du corps</header>
+    <p>Coucou je suis le ventre</p>
+    <footer>Coucou nous sommes les pieds</footer>
+&lt;/body&gt;
+&lt;/html&gt;</code>
+				</pre>
+        </section>
+         <section>
+         	<section>
+	            <h1>Une page web,<br />ça contient quoi ?</h1>
 			</section>
+            <section>
+	            <h3>Du texte</h3>
+                <p><img src="img/html_texte.png" alt="Exemple de HTML" width="591" height="320" /></p>
+			</section>
+             <section>
+	            <h3>Des images</h3>
+                <p><img src="img/grumpy.jpg" alt="Grumpy cat" height="400" /></p>
+			</section>
+            <section>
+	            <h3>Du son</h3>
+                <p><audio controls="controls">
+  <source src="assets/music.mp3" type="audio/mp3" />
+  Votre navigateur n'est pas compatible
+</audio></p>
+			</section>
+             <section>
+	            <h3>Des vidéos</h3>
+                <p><iframe width="560" height="315" src="http://www.youtube.com/embed/onGeGJ1rGn4?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></p>
+			</section>
+        </section>
+        <section>
+            <section>
+                <h1>Les balises HTML courantes</h1>
+            </section>
+            <section>
+                <h3>Les blocs de texte</h3>
+                <p>&lt;p&gt;, &lt;div&gt;, &lt;span&gt; </p>
+            </section>
+			<section>
+                <h3>Les titres</h3>
+                <p>&lt;h1&gt; à &lt;h6&gt; </p>
+                <p>&nbsp;</p>
+                <div>
+               		<h1>Titre 1</h1>
+                	<h3>Titre 3</h6>
+                    <h6>Titre 6</h6>
+				</div>
+            </section>
+           <section>
+                <h3>Les listes</h3>
+                <p>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt; </p>
+                <p>&nbsp;</p>
+               <div class="mi_exemple">
+               		<p>&lt;ul&gt;</p>
+                	<ul>
+                    	<li>Liste non ordonnée</li>
+                        <li>Liste non ordonnée</li>
+					</ul>
+				</div><div class="mi_exemple">
+					<p>&lt;ol&gt;</p>
+                    <ol>
+                    	<li>Liste ordonnée</li>
+                        <li>Liste ordonnée</li>
+					</ol>
+                </div>
+            </section>
+            <section>
+                <h3>Les balises d'emphase</h3>
+                <p>&lt;strong&gt; et &lt;em&gt; </p>
+                 <p>&nbsp;</p>
+                <p style="font-family:Tahoma, Geneva, sans-serif">&lt;em&gt; permet de <em>séparer</em> un mot dans une phrase.</p>
+                <p style="font-family:Tahoma, Geneva, sans-serif">&lt;strong&gt; permet de <strong>mettre en avant</strong> du texte.</p>
+            </section>
+            <section>
+                <h3>Le retour à la ligne</h3>
+                <p>&lt;br /&gt;</p>
+                 <p>&nbsp;</p>
+                <p>Il permet de revenir à<br />à la ligne...</p>
+                <p>...mais souvent avec un mauvais interlignage</p>
+            </section>
+			<section>
+                <h3>Indice et exposant</h3>
+                <p>&lt;sup&gt; et &lt;sub&gt;</p>
+                <h1>H<sub>2</sub>O&nbsp;&nbsp;10<sup>2</sup></h1>
+                <pre style="text-align:center"><code class="html">H<sub>2</sub>  10<sup>2</sup></code></pre>
+            </section>
+            <section>
+                <h3>Les liens</h3>
+                <p>&lt;a&gt;</p>
+                 <p>&nbsp;</p>
+               <div class="mi_exemple">
+               		<p>Interne</p>
+<pre><code class="html"><a href="#toto">
+	Je suis un lien
+</a>
+
+<a name="toto">
+	Je suis la cible
+</a></code></pre>
+				</div><div class="mi_exemple">
+					<p>Externe</p>
+<pre><code class="html">&lt;a
+href="http://www.google.fr"
+title="Lien vers Google">
+Emmenez-moi loin d'ici !
+&lt;/a&gt;</code></pre>
+                </div>
+            </section>
+            <section>
+                <h3>Les images</h3>
+                <h4>JPG, GIF, PNG</h4>
+                <p>&lt;img&gt;</p>
+                <pre style="text-align:center"><code class="html">&lt;img src="dossier/toto.jpg" 
+	alt="Ceci est une image représentant Toto"
+    width="100" height="100" /&gt;</code></pre>
+            </section>
+            
+            
+            
+            
+             <section>
+                <h3>Autres balises</h3>
+                <p>&lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt;, &lt;abbr&gt;, &lt;blockquote&gt;, etc</p>
+            </section>
+            
         </section>
 	</div>
 </div>

@@ -152,8 +152,19 @@ body {
 .reveal li {
 	line-height:150%;
 }
+html .reveal pre {
+	line-height:0em;
+}
 html .reveal pre code {
 	padding-top:0;
 	font-size:140%;
 	line-height:140%;
+}
+strong {
+	font-weight:900;
+}
+html .reveal  .mi_exemple {
+	display:inline-block;
+	width:50%;
+	vertical-align:top;
 }
